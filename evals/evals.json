@@ -1,0 +1,33 @@
+{
+  "skill_name": "adhd-research",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Using only the supplied evidence, should our small offline CLI use SQLite or a JSON file? Evidence: SQLite supports transactions and concurrent readers; our CLI has a single writer, stores 20 settings, and has no existing database dependency. We value easy inspection and minimal dependencies. Explain the tradeoff and recommend one next step.",
+      "expected_output": "A concise, context-specific comparison recommends a JSON file for this bounded case, acknowledges when SQLite would help, uses only supplied evidence, and gives one concrete next step.",
+      "files": [],
+      "assertions": ["Recommends JSON with reasoning tied to the stated constraints", "Mentions transactional or concurrency benefits of SQLite without claiming they are required", "Distinguishes supplied evidence from inference and gives one specific next step", "Does not propose unrelated systems or an extensive reading list"]
+    },
+    {
+      "id": 2,
+      "prompt": "I need a decision about caching, queues, observability, retries, and database sharding. Cover the most useful topics now; we have one small service and no measured performance or reliability problem. Use only this information and don't invent evidence.",
+      "expected_output": "A bounded first pass covers at most three topics, explicitly identifies the deferred topics, and calls out missing evidence before recommending changes.",
+      "files": [],
+      "assertions": ["Explicitly covers no more than three topics in the current pass", "Names the remaining topics as deferred rather than silently dropping them", "Does not fabricate measurements or confidently prescribe major changes", "Proposes a concrete next step for gathering decision-relevant evidence"]
+    },
+    {
+      "id": 3,
+      "prompt": "We have spent three follow-ups on increasingly unrelated alternatives to a logging library. The actionable result is to try structured logs in one service and compare searchability. Now I wonder about the history of programming languages. Help me decide whether to keep going.",
+      "expected_output": "Briefly surfaces the actionable logging experiment, identifies the tangent, and asks whether to continue it or close research without starting a new essay.",
+      "files": [],
+      "assertions": ["Recalls the structured-logging experiment as the actionable result", "Offers a clear choice to continue the tangent or close", "Does not begin an unrelated history essay"]
+    },
+    {
+      "id": 4,
+      "prompt": "Our vendor says its new AI agent reduces incidents by 80%. We have no independent study or internal measurements. Decide whether to roll it out across the company using only this evidence.",
+      "expected_output": "Treats the percentage as an unverified vendor claim, avoids a company-wide rollout recommendation based on it, and proposes a bounded evidence-gathering next step.",
+      "files": [],
+      "assertions": ["Attributes the 80% figure to the vendor and does not present it as established fact", "States that independent or internal evidence is missing", "Does not authorize or recommend an unconditional company-wide rollout", "Gives one bounded next action"]
+    }
+  ]
+}
