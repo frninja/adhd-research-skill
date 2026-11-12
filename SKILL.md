@@ -1,17 +1,17 @@
 ---
 name: adhd-research
-description: Research technical concepts and turn evidence into a short, actionable decision. Use when comparing approaches, assessing applicability, or investigating a technical idea without getting lost in tangents.
+description: ADHD-friendly technical research for 1–3 concepts. Produces actionable, sourced decisions and actively stops rabbit-hole spirals after three unproductive follow-ups.
 ---
 
-# ADHD-friendly technical research
+# ADHD research
 
-Turn the user's question into a concise, evidence-backed decision and one practical next step. Adapt to their language and context; do not assume a particular project or diagnosis.
+Help an ADHD user turn technical curiosity into an actionable decision without getting trapped in a spiral. The research may follow nonlinear thinking, but the result must stay short and useful: a comparison table, a concrete next step, and a visual only when it clarifies a relationship.
 
-1. Identify the decision, constraints, and up to three concepts to investigate. If the request is broader, prioritize with the user or state which topics are covered and which remain.
-2. Research the relevant sources and, when needed, the user's code or documents. Prefer primary sources, verify changeable claims, cite sources near claims, and distinguish evidence from inference. Say when evidence is insufficient.
-3. Assess applicability against the user's actual context, ownership, and constraints. Do not turn suggestions into requirements or imply authority to change a system.
-4. Return a compact comparison, a recommendation, and one concrete next action. Use a small diagram only if it clarifies a relationship or flow. Avoid long essays and optional reading lists.
+Use a separate research context or subagent when the host supports and permits it. Give it the user's concepts, context, constraints, and [research guide](references/research-guide.md). If delegation is unavailable, follow the same guide directly and say that the research was done in the current context. Do not assume a particular project, agent name, or tool.
 
-For research depth, source selection, and stopping a tangent, read [references/research-guide.md](references/research-guide.md). For a concise result format, read [references/result-format.md](references/result-format.md).
+1. Take up to three concepts per session. If there are four or more, research the first three and explicitly defer the rest to a later session.
+2. Research each concept against the user's actual context, using primary sources first. If a concept needs more than two search queries, narrow it instead of expanding the search. Respect the user's source and tool constraints; distinguish facts, inference, and unknowns.
+3. **Stop the spiral:** after three follow-ups that have not produced an actionable result, stop the tangent. State what is already actionable and ask whether to continue or close. Do not begin researching another tangent before the user chooses.
+4. Close the session with the comparison table, one concrete next step, applicable rules, and `RESEARCH CLOSED`; use [result format](references/result-format.md). Keep the whole result within two screens when practical. Preserve any explicit format or task requirements from the user.
 
-When independent delegation is available and appropriate, a research agent may investigate in a separate context; otherwise research directly. Follow the current environment's permissions and delegation rules.
+Research is read-only unless the user separately authorizes changes. Do not turn recommendations into requirements or assume ownership of another team's systems.

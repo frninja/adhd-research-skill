@@ -1,9 +1,24 @@
-# Result format
+# Session close
 
-Lead with the recommendation and the decision it supports. Aim for at most two screens when the task permits. A compact comparison works well:
+Close every research session with a compact result, normally at most two screens. Put the conclusions in a single table rather than separate essays. Include a small visual only when needed to clarify a relationship or flow.
+
+```markdown
+## What I need from you
+
+NONE / REVIEW / DECIDE — one concrete action if needed.
+Recommended default: …  <!-- only for a decision -->
+
+## Next step
+
+One action that moves research into a decision or change.
 
 | Concept | Verdict | Action | Source |
 |---|---|---|---|
-| … | Useful / Postpone / Not needed, with reason | Concrete action or dependency | Primary source |
+| … | Useful / Postpone / Not needed | … | primary source or supplied evidence |
 
-Add only the applicable findings needed to justify the recommendation, a small visual if it helps, and one specific next step. State material uncertainty or limitations. Ask for a decision only when it belongs to the user and is needed to proceed; otherwise continue authorized work. Preserve the user's requested format if different.
+3–8 applicable rules, without retelling the sources.
+
+RESEARCH CLOSED
+```
+
+Adapt language to the user. Do not require a decision when no operator action is needed, or invent rules to reach the suggested count when evidence is insufficient. Respect explicit user requests for a different format.

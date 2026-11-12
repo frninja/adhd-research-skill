@@ -1,15 +1,22 @@
 # Research guide
 
-## Keep the work bounded
+## ADHD and focus
 
-- Start from the decision the research should support. Break broad questions into at most three concepts for this pass; identify deferred topics without silently dropping them.
-- Search only as deeply as needed to reach a defensible recommendation. If queries keep multiplying, narrow the question or state what remains unknown; do not impose an arbitrary query limit when more evidence is necessary.
-- After several tangential follow-ups with no actionable result, summarize what is already actionable and ask whether to continue the tangent or close. Do not interrupt an active task that has a clear path to completion.
-- Avoid unrelated recommendations and reading lists that invite more tangents.
+The user may think in nonlinear, cascading questions: each answer can open several new threads. Prioritize actionable insight over theory for its own sake. Use structure and tables instead of walls of text. Do not treat ADHD as a defect or presume every user has a diagnosis.
 
-## Evidence
+At three or more follow-ups without an actionable result, stop. Say that the discussion is spiraling, summarize what can already be done, and offer a clear choice: continue the tangent or close and act. This is a boundary against rabbit holes, not a reason to stop an active task that already has an actionable path.
 
-- Prefer original research, standards, official documentation, and source code for technical claims. Check dates and versions when they affect the conclusion.
-- Separate established human-factors findings from emerging AI-agent evidence. Label vendor advice as vendor practice, not scientific proof.
-- Distinguish observed facts, inferences, and unknowns. Do not invent results, variables, or causal claims. Cite the sources supporting material claims and indicate gaps or conflicting evidence.
-- Assess cost, fit, and ownership against the actual context. When a change belongs to another team or system, identify that dependency rather than presenting it as an action the user can necessarily take.
+## Scope and sources
+
+- Study one to three concepts per session. For four or more, take the first three and name the deferred topics.
+- If a concept needs more than two search queries, narrow it; explain the missing evidence or ask for a narrower question if necessary. Do not invent a conclusion to satisfy the limit.
+- Use primary sources first, check dates and versions where relevant, and cite material claims. If the user supplies all allowed evidence, label it as user-provided rather than inventing sources.
+- Separate established human-factors principles from emerging AI-agent evidence. Label vendor advice as vendor practice, not scientific proof.
+- Distinguish facts from inference and unknowns. If you do not know, say so and indicate where the missing evidence could be found; do not invent variables or causal claims.
+- Assess fit, cost, and ownership against the actual context. Mark recommendations for systems owned by another team as a dependency or a ticket for that team, rather than implying the user owns the change.
+
+## Avoid
+
+- Separate essays for each concept or long text around the results table.
+- Optional reading lists or unrelated recommendations that invite more spirals.
+- Claims unsupported by sources, or instructions to modify another team's system as though it were in scope.
